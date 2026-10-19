@@ -10,7 +10,7 @@ class User:
         self.drivers_license = drivers_license
         self.posts = [] # this instance variable will store posts for this specific user
 
-    def create_post(self, post: str):
+    def add_post(self, post: str):
         self.posts.append(post) # Add the post to the user's own posts list
         User.all_posts.append(post) # adds the same post to the shared class variable list of all posts
 
